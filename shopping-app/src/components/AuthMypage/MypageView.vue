@@ -10,7 +10,7 @@
                     <p>電話番号：{{$store.state.userInfo.tel}}</p>
                 </div>
                 <div class="">
-                    <button class="btn btn-warning" @click="logout">ログアウト</button>
+                    <button class="btn btn-warning" @click="logout"><fa icon="arrow-right-from-bracket" />ログアウト</button>
                 </div>
             </div>
             <div class="col-9 p-3">

@@ -29,7 +29,11 @@
                 <td><input class="form-control" type="password" name="repass" v-model="repass"></td>
             </tr>
         </table>
-        <button class="btn btn-success" @click="signup">新規登録</button>
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-success" @click="signup">新規登録</button>
+            <button class="btn btn-link" @click="returnLoginPage"><fa icon="rotate-left" />ログインページへ</button>
+        </div>
+
     </div>
     </div>
 </template>
@@ -89,6 +93,9 @@
                         console.log(err);
                     })
                 }
+            },
+            returnLoginPage(){
+                this.$store.commit('signUpFalse');
             }
         }
     }
